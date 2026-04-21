@@ -9,5 +9,7 @@
 */
 
 pub fn celsius_to_fahrenheit(c: f64) -> f64 {
-    todo!()
+    let decimal_value : f64 = 9.0 / 5.0;
+    let temperature_in_fahrenheit =  c * decimal_value + 32.0;
+    return temperature_in_fahrenheit;
 }
