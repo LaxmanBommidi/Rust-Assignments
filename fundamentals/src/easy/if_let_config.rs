@@ -10,5 +10,11 @@
 */
 
 pub fn get_config(value: Option<String>) -> String {
-    todo!()
+    
+    let config_value = match value {
+        Some(inner_value) =>inner_value,
+        None => String::from("default")
+    };
+
+    return config_value;
 }
